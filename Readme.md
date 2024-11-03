@@ -41,6 +41,7 @@ instagram-clone/
     ├── middleware/          # Auth middleware
     ├── config/              # Config files (e.g., database, JWT)
     └── package.json
+```
 
 ## 🖥️ Installation & Setup
 
@@ -49,63 +50,52 @@ instagram-clone/
    ```bash
    git clone https://github.com/yourusername/Instagram-Clone.git
    cd Instagram-Clone
+   ```
 
-2. Install Dependencies
+2. **Install Dependencies**
 
-First, install dependencies for both the client and server.
+    Install dependencies for both the client and server.
 
-In the `client` directory:
+    In the `client` directory:
 
-```bash
-cd client
-npm install
+    ```bash
+    cd client
+    npm install
+    ```
 
-# 🖥️ Installation & Setup
+    In the `server` directory:
 
-This guide will walk you through the steps to set up the Instagram Clone project using the MERN stack. Follow each step carefully to install dependencies, configure environment variables, and start the application.
+    ```bash
+    cd ../server
+    npm install
+    ```
 
-## 1. Install Dependencies
+3. **Environment Variables**
+    Set up environment variables to configure the project for MongoDB and JWT.
 
-First, install dependencies for both the client and server.
+    Add the following variables to the keys.js file:
 
-In the `client` directory:
+    ```env
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    ```
 
-```bash
-cd client
-npm install
-Then, in the server directory:
+4. **Start the Application**
+    Run both the client and server to start the application.
 
-bash
-Copier le code
-cd ../server
-npm install
+    In the client directory, run:
 
-3. Environment Variables
-Set up environment variables to configure the project for MongoDB and JWT.
+    ```bash
+    npm start
+    In the server directory, run:
+    ```
 
-Add the following variables to the keys.js file:
+    ```bash
+    npm start
+    ```
 
-```env
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+5. **Access the Application**
+    Once both servers are running:
 
-4. Start the Application
-Run both the client and server to start the application.
-
-In the client directory, run:
-
-```bash
-Copier le code
-npm start
-In the server directory, run:
-
-```bash
-Copier le code
-npm start
-
-
-5. Access the Application
-Once both servers are running:
-
-The frontend is accessible at http://localhost:3000
-The backend API is accessible at http://localhost:5000
+    The frontend is accessible at http://localhost:3000,
+    The backend API is accessible at http://localhost:5000
